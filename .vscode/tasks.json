@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Space Invaders",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++17",
+          "main.cpp",
+          "raylib/core.c",
+          "raylib/shapes.c",
+          "raylib/textures.c",
+          "raylib/text.c",
+          "raylib/models.c",
+          "raylib/rlgl.c",
+          "-Iraylib",
+          "-o",
+          "build/space_invaders",
+          "-lglfw",
+          "-lGL",
+          "-lm",
+          "-ldl",
+          "-lpthread",
+          "-lrt",
+          "-lX11",
+          "-lopenal",
+          "-lpulse",
+          "-lasound"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  

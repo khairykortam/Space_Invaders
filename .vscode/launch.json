@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Space Invaders",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/space_invaders",  // Make sure this points to the built executable
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "externalConsole": true,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "Build Space Invaders"
+      }
+    ]
+  }
+  
